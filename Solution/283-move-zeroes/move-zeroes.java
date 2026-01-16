@@ -1,5 +1,6 @@
 class Solution {
     public void moveZeroes(int[] nums) {
+        // Brute force approach
         int n = nums.length;
         int[] temp = new int[n];
         int index = 0;
