@@ -4,7 +4,7 @@ class Solution {
         int end = n-1;
         int mid;
         int ans = 0;
-        if (n == 0 || n == 1){
+        if (n<2){
             return n;
         } else{
             while(start<=end){
