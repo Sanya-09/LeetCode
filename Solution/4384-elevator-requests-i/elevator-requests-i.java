@@ -5,9 +5,9 @@ class Solution {
         int ans=0;
 
 
-        for(int i : requests){
+        for(int i=0 ; i<requests.length ; i++){
             
-            int currentfloor = i;
+            int currentfloor = requests[i];
 
             ans = ans + Math.abs(currentfloor - prefloor);
             prefloor=currentfloor;
