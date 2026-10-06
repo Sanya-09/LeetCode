@@ -5,9 +5,9 @@ class Solution {
         for(int i = 0; i <= 9; i++){
             int present = Integer.parseInt(s.charAt(i) + "");
             int clock = Math.abs(present - curr);
-            int anti = 10 - clock;
-            int ans = Math.min(clock , anti);
-            res += ans;
+            // int anti = 10 - clock;
+            // int ans = Math.min(clock , anti);
+            res += Math.min(clock , 10-clock);
             curr = present;
         }
         return res;
